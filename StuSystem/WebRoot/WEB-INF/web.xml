@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>StuSystem</display-name>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.stus.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AllStuMessageServlet</servlet-name>
+    <servlet-class>com.stus.servlet.AllStuMessageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>StuMessageServlet</servlet-name>
+    <servlet-class>com.stus.servlet.StuMessageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SCMServlet</servlet-name>
+    
+    <servlet-class>com.stus.servlet.SCMServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ChooseServlet</servlet-name>
+    <servlet-class>com.stus.servlet.ChooseServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CCServlet</servlet-name>
+    <servlet-class>com.stus.servlet.CCServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GradeServlet</servlet-name>
+    <servlet-class>com.stus.servlet.GradeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OneStuGraChangeServlet</servlet-name>
+    <servlet-class>com.stus.servlet.OneStuGraChangeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpGradeServlet</servlet-name>
+    <servlet-class>com.stus.servlet.UpGradeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AllStuGradeServlet</servlet-name>
+    <servlet-class>com.stus.servlet.AllStuGradeServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AllStuMessageServlet</servlet-name>
+    <url-pattern>/AllStuMessageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StuMessageServlet</servlet-name>
+    <url-pattern>/StuMessageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SCMServlet</servlet-name>
+    <url-pattern>/SCMServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChooseServlet</servlet-name>
+    <url-pattern>/ChooseServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CCServlet</servlet-name>
+    <url-pattern>/CCServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GradeServlet</servlet-name>
+    <url-pattern>/GradeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OneStuGraChangeServlet</servlet-name>
+    <url-pattern>/OneStuGraChangeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpGradeServlet</servlet-name>
+    <url-pattern>/UpGradeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AllStuGradeServlet</servlet-name>
+    <url-pattern>/AllStuGradeServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
