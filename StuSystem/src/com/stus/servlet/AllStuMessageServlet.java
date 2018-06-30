@@ -26,6 +26,9 @@ public class AllStuMessageServlet extends HttpServlet {
 		response.setContentType("utf-8");
 		MessageService messageService = new MessageService();
 		String id = request.getParameter("tid");
+		if(id == null){
+			id = request.getParameter("id");
+		}
 		request.setAttribute("tid", id);
 		try {
 			List<Student> student = messageService.findAll(id);		

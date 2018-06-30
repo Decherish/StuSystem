@@ -26,6 +26,9 @@ public class AllStuGradeServlet extends HttpServlet {
 			throws ServletException, IOException {
 		response.setContentType("utf-8");
 		String tid = request.getParameter("tid");
+		if (tid==null) {
+			tid = request.getParameter("id");
+		}
 		request.setAttribute("tid", tid);
 		AllStuGradeService service = new AllStuGradeService();
 		try {
